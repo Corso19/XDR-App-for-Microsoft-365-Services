@@ -27,9 +27,7 @@ var connectionString = Environment.GetEnvironmentVariable("DEFAULT_CONNECTION")
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Services.AddControllers();
-//builder.Services.AddQuartzHostedService(options => options.WaitForJobsToComplete = true);
 builder.Services.AddScoped<IEventsRepository, EventsRepository>();
-//builder.Services.AddScoped<IEventsService, EventsService>();
 builder.Services.AddScoped<IAttachmentRepository, AttachmentRepository>();
 builder.Services.AddScoped<ISensorsRepository, SensorsRepository>();
 builder.Services.AddScoped<ISensorsService, SensorsService>();
@@ -49,7 +47,6 @@ builder.Services.AddScoped<TeamsSensorHandler>();
 builder.Services.AddScoped<SharePointSensorHandler>();
 builder.Services.AddScoped<ISensorHandlerFactory, SensorHandlerFactory>();
 builder.Services.AddMetricServer(options => { options.Port = 9091; });
-//builder.Services.AddSignalR();
 builder.Services.AddSignalR(options => { options.EnableDetailedErrors = true; });
 
 // Add the DbContext and SensorOrchestrator
