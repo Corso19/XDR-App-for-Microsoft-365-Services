@@ -15,7 +15,7 @@ public class ResourcesModel
     public string Subject { get; set; } // For Email
     public string Sender { get; set; } // For Email
     public string Recipients { get; set; } // For Email
-    public string FileURL { get; set; } // For SharePoint
+    public string FileUrl { get; set; } // For SharePoint
     public string OriginalItemId { get; set; }
     
     //Navigation properties
