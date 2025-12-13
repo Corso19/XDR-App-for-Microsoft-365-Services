@@ -43,7 +43,6 @@ builder.Services.AddSingleton<GraphAuthProvider>();
 builder.Services.AddScoped<IGraphAuthService, GraphAuthService>();
 builder.Services.AddScoped<IIncidentDetectionService, IncidentDetectionService>();
 builder.Services.AddSingleton<SecurityMetricsService>();
-//builder.Services.AddScoped<ISensorHandler, EmailSensorHandler>();
 builder.Services.AddScoped<EmailSensorHandler>();
 builder.Services.AddScoped<TeamsSensorHandler>();
 builder.Services.AddScoped<SharePointSensorHandler>();
