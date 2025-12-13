@@ -8,10 +8,10 @@ using IncidentResponseAPI.Services;
 using IncidentResponseAPI.Services.Implementations;
 using IncidentResponseAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 using WebApplication = Microsoft.AspNetCore.Builder.WebApplication;
 using Prometheus;
 using IncidentResponseAPI.Services.Implementations.Handlers;
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
